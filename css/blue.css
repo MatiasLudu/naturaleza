@@ -1,0 +1,31 @@
+body{
+	background: url("../img/cielo.jpg");
+	background-attachment: fixed;
+}
+
+#logo{
+	background: #1f87c4;
+}
+
+#menu ul li:hover{
+	background: #1f87c4;
+}
+
+.button-more{
+	background: #1f87c4;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #1f87c4 !important;
+    background: #1f87c4 !important;
+    font-weight: normal;
+    color: #fff;
+}
+
+.form-error{
+	background: #1f87c4;
+}
+
+.error{
+	border-color: #1f87c4 !important;
+}
