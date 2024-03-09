@@ -190,7 +190,7 @@ footer{
 }
 
 #to-green{
-	background: #235e3d;
+	background: #f0b209;
 }
 
 #to-red{
@@ -230,10 +230,17 @@ footer{
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: 1px solid #235e3d !important;
-    background: #235e3d !important;
+    border: 1px solid #f0b209 !important;
+    background: #f0b209 !important;
     font-weight: normal;
     color: #fff;
+}
+
+#form_contact input,
+.has-validation-callback input,
+input{
+	outline-style: none;
+	border: 1px solid #f0b209 !important;	
 }
 
 #reloj{
@@ -264,12 +271,12 @@ footer{
 .form-error{
 	float: right;
 	font-size: 11px;
-	background: #235e3d;
+	background: #f0b209;
 	color: white;
 	padding: 10px;
 	width: 65%;
 }
 
 .error{
-	border-color: #235e3d !important;
+	border-color: #f0b209 !important;
 }

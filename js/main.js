@@ -1,63 +1,6 @@
 $(document).ready(function(){
 
-	//Slider
-
-	if(window.location.href.indexOf('index') > -1){
-		$('.galeria').bxSlider({
-	    	mode: 'fade',
-	    	captions: true,
-	    	slideWidth: 1200,
-	    	responsive: true
-		});	
-	}
 	
-
-	//Post
-	if(window.location.href.indexOf('index') > -1){
-		var posts = [
-			{
-				title: 'Animales en peligro de extinción',
-				date: 'Publicado el día: ' + moment().format("dddd D [de] MMMM [de] YYYY, h:mm a"),
-				content: 'En el planeta existen más de 7,7 millones de especies de animales y más del 20% está en peligro de extinción. Algunos de los animales más extraños de nuestro planeta caminan en la cuerda floja de la extinción. El fotógrafo Tim Flach ha pasado más de dos años inmortalizando en fotografías algunos de ellos, los más emblemáticos, curiosos y llamativos.'
-			},
-			{
-				title: 'Los científicos vaticinan un futuro desolador para el planeta',
-				date: 'Publicado el día: ' + moment().format("dddd D [de] MMMM [de] YYYY, h:mm a"),
-				content: '"Estamos caminando hacia un futuro espantoso". Esta es la advertencia emitida por un equipo de expertos tras el análisis de más 150 estudios sobre las cuestiones ambientales actuales más acuciantes. "Hoy, la supervivencia de todas las especies, incluida la nuestra, está amenazada", apuntan.'
-			},
-			{
-				title: 'Un retrato de la Tierra dentro de 500 años',
-				date: 'Publicado el día: ' + moment().format("dddd D [de] MMMM [de] YYYY, h:mm a"),
-				content: 'Que la Tierra persista dentro de 500 años con sus vibrantes bosques, océanos, campos y ciudades dependerá de si los humanos estamos dispuestos a cambiar sus comportamientos desde la actualidad.'
-			},
-			{
-				title: 'Ahogados en un mar de plástico',
-				date: 'Publicado el día: ' + moment().format("dddd D [de] MMMM [de] YYYY, h:mm a"),
-				content: 'Cada año acaban en el océano unos ocho millones de toneladas de plástico, un material que puede tardar siglos, o más, en desaparecer. ¿Podemos seguir disfrutando de este invento sin destruir el planeta?'
-			},
-			{
-				title: 'Las ballenas jorobadas aprenden canciones unas de otras',
-				date: 'Publicado el día: ' + moment().format("dddd D [de] MMMM [de] YYYY, h:mm a"),
-				content: 'Un grupo de científicos dirigido por la Universidad de Queensland, en Australia, ha descubierto que las ballenas jorobadas pueden aprender canciones muy complejas de ballenas de otras regiones. La transmisión cultural se produciría en las rutas migratorias o en las zonas de alimentación compartidas.'
-			},
-		];
-
-
-		posts.forEach((item, index) => {
-			var post = `
-				<article class="post">
-					<h2>${item.title}</h2>
-					<span class="date">${item.date}</span>
-					<p>
-						${item.content}
-					</p>
-					<a href="#" class="button-more">Leer más</a>	
-				</article>
-			`;
-
-			$("#posts").append(post);
-		});
-	}
 
 	//Selector de tema
 
